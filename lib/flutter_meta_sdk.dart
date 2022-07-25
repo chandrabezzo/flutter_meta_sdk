@@ -1,4 +1,3 @@
-
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
@@ -6,7 +5,7 @@ import 'package:flutter/services.dart';
 const channelName = 'solusibejo.com/flutter_meta_sdk';
 
 class FlutterMetaSdk {
-static const _channel = MethodChannel(channelName);
+  static const _channel = MethodChannel(channelName);
 
   // See: https://github.com/facebook/facebook-android-sdk/blob/master/facebook-core/src/main/java/com/facebook/appevents/AppEventsConstants.java
   static const eventNameCompletedRegistration =
