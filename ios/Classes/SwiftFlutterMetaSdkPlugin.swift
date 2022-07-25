@@ -28,7 +28,7 @@ public class SwiftFlutterMetaSdkPlugin: NSObject, FlutterPlugin {
         }
         
         public func applicationDidBecomeActive(_ application: UIApplication) {
-            FacebookSdkMethods.activateApp()
+            FlutterMetaSdkMethods.activateApp()
         }
         
         public func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {

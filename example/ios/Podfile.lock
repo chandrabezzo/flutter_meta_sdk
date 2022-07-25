@@ -1,11 +1,27 @@
 PODS:
+  - FBAEMKit (12.0.2):
+    - FBSDKCoreKit_Basics (= 12.0.2)
+  - FBAudienceNetwork (6.9.0)
+  - FBSDKCoreKit (12.0.2):
+    - FBAEMKit (= 12.0.2)
+    - FBSDKCoreKit_Basics (= 12.0.2)
+  - FBSDKCoreKit_Basics (12.0.2)
   - Flutter (1.0.0)
-  - flutter_meta_sdk (0.0.1):
+  - flutter_meta_sdk (1.0.0):
+    - FBAudienceNetwork
+    - FBSDKCoreKit
     - Flutter
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_meta_sdk (from `.symlinks/plugins/flutter_meta_sdk/ios`)
+
+SPEC REPOS:
+  trunk:
+    - FBAEMKit
+    - FBAudienceNetwork
+    - FBSDKCoreKit
+    - FBSDKCoreKit_Basics
 
 EXTERNAL SOURCES:
   Flutter:
@@ -14,8 +30,12 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_meta_sdk/ios"
 
 SPEC CHECKSUMS:
+  FBAEMKit: c6b8ddf8371640fcd1a3b844d0f8884c8f334cea
+  FBAudienceNetwork: 83096d73433759c10f9cf9b3bad5e5cff58694cb
+  FBSDKCoreKit: 506c0fd1c09a3075f62be8fa36bdd921c563daa9
+  FBSDKCoreKit_Basics: c0701d1634c944d60dd3c6361d66dbd0e707a456
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  flutter_meta_sdk: ef27b028e6c49343363fb62f164b7438878c80bc
+  flutter_meta_sdk: 4b8a7c8df465323f82c1d096144d3c0ba012077b
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
