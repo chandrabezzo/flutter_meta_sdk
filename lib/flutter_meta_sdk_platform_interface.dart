@@ -18,7 +18,7 @@ abstract class FlutterMetaSdkPlatform extends PlatformInterface {
   ///
   /// Defaults to [MethodChannelFlutterMetaSdk].
   static FlutterMetaSdkPlatform get instance => _instance;
-  
+
   /// Platform-specific implementations should set this with their own
   /// platform-specific class that extends [FlutterMetaSdkPlatform] when
   /// they register themselves.
