@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solusibejo.flutter_meta_sdk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+    </application>
+</manifest>
