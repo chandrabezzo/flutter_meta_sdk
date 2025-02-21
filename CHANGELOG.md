@@ -1,4 +1,4 @@
-## [1.0.3] - February 21 2025
+## [1.0.4] - February 21 2025
 * Setting namespace
 
 ## [1.0.2] - July 25 2022
