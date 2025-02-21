@@ -25,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.solusibejo.flutter_meta_sdk'
     compileSdkVersion 31
 
     compileOptions {
