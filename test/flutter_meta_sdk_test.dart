@@ -8,17 +8,19 @@ void main() {
   const channel = MethodChannel(channelName);
   final metaSdk = FlutterMetaSdk();
 
-
   MethodCall? methodCall;
 
   setUp(() async {
-    channel.setMockMethodCallHandler((MethodCall m) async {
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, (MethodCall m) async {
       methodCall = m;
+      return methodCall;
     });
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(channel, null);
     methodCall = null;
   });
 
@@ -41,4 +43,3 @@ void main() {
     });
   });
 }
-
