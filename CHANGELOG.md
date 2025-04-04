@@ -1,3 +1,6 @@
+## [1.0.5] - April 4 2025
+* Update Android FB SDK Version
+
 ## [1.0.4] - February 21 2025
 * Setting namespace
 
