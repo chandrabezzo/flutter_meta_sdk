@@ -37,6 +37,9 @@ public class SwiftFlutterMetaSdkPlugin: NSObject, FlutterPlugin {
 
         public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
             switch call.method {
+            case "getSdkVersion":
+                FlutterMetaSdkMethods.getSdkVersion(result: result)
+
             case "activateApp":
                 FlutterMetaSdkMethods.activateApp()
                 break

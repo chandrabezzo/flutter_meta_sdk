@@ -9,6 +9,10 @@ import io.flutter.plugin.common.MethodChannel
 import java.util.*
 
 object FlutterMetaSdkMethods {
+    fun getSdkVersion(appEventsLogger: AppEventsLogger, result: MethodChannel.Result) {
+        result.success(FacebookSdk.getSdkVersion())
+    }
+
     fun activateApp(appEventsLogger: AppEventsLogger, result: MethodChannel.Result) {
         appEventsLogger.logEvent(AppEventsConstants.EVENT_NAME_ACTIVATED_APP)
         result.success(null)

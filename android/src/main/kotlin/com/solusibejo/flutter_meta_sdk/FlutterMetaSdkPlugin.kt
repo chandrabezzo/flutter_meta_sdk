@@ -40,6 +40,7 @@ class FlutterMetaSdkPlugin: FlutterPlugin, MethodCallHandler {
 
   override fun onMethodCall(call: MethodCall, result: Result) {
     when (call.method) {
+      "getSdkVersion" -> FlutterMetaSdkMethods.getSdkVersion(appEventsLogger, result)
       "activateApp" -> FlutterMetaSdkMethods.activateApp(appEventsLogger, result)
       "clearUserData" -> FlutterMetaSdkMethods.clearUserData(result)
       "setUserData" -> FlutterMetaSdkMethods.setUserData(call, result)
