@@ -122,6 +122,11 @@ abstract class FlutterMetaSdkPlatform extends PlatformInterface {
     return _channel.invokeMethod<String>('getApplicationId');
   }
 
+  /// Returns the current Facebook SDK version
+  Future<String?> getSdkVersion() {
+    return _channel.invokeMethod<String>('getSdkVersion');
+  }
+
   Future<String?> getAnonymousId() {
     return _channel.invokeMethod<String>('getAnonymousId');
   }

@@ -43,6 +43,12 @@ class FlutterMetaSdkMethods {
         result(nil)
     }
 
+    /// iOS FBSDKCoreKit doesn't expose a getSdkVersion [like Android does](https://developers.facebook.com/docs/reference/androidsdk/current/facebook/com/facebook/facebooksdk.html/#getsdkversion)
+    /// so just return "latest"  as this is what is set in the podspec
+    static func getSdkVersion(result: @escaping FlutterResult) {
+        result("latest")
+    }
+
     static func getApplicationId(result: @escaping FlutterResult) {
         result(Settings.shared.appID)
     }

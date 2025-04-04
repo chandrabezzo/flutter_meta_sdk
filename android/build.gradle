@@ -44,9 +44,10 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
+
+    dependencies {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+        implementation 'com.facebook.android:facebook-android-sdk:latest.release'
+    }
 }
 
-dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'com.facebook.android:facebook-android-sdk:14.1.0'
-}
